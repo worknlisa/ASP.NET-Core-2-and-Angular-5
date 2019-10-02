@@ -76,10 +76,10 @@ namespace TestMakerFree
                     defaults: new { controller = "Home", action = "Index" });
             });
 
-            /*
-             * Obsolete code: replaced on 2017/12/06 (see Program.cs file)
-             * ref.: https://docs.microsoft.com/en-us/aspnet/core/migration/1x-to-2x/#move-database-initialization-code
-             * 
+            
+             //* Obsolete code: replaced on 2017/12/06 (see Program.cs file)
+             //* ref.: https://docs.microsoft.com/en-us/aspnet/core/migration/1x-to-2x/#move-database-initialization-code
+            
             // Create a service scope to get an ApplicationDbContext instance using DI
             using (var serviceScope =
                 app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
@@ -90,7 +90,7 @@ namespace TestMakerFree
                 // Seed the Db.
                 DbSeeder.Seed(dbContext);
             }
-            */
+            
         }
     }
 }
